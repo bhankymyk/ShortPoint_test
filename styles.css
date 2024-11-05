@@ -1,0 +1,51 @@
+.users-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.user-container {
+  position: relative;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.user-container:hover {
+  animation: slant 0.5s ease;
+  animation-iteration-count: 1;
+  transform: scale(1.1);
+}
+
+@keyframes slant {
+  0% {
+    transform: rotate(0deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+}
+
+.user-image {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.user-details {
+  margin: 5px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: grey;
+  text-decoration: none;
+}
